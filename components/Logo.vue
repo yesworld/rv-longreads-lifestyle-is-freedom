@@ -1,9 +1,9 @@
 <template lang="pug">
-  .VueToNuxtLogo
-    .Triangle.Triangle--two
-    .Triangle.Triangle--one
-    .Triangle.Triangle--three
-    .Triangle.Triangle--four
+  div.VueToNuxtLogo
+    div.Triangle.Triangle--two
+    div.Triangle.Triangle--one
+    div.Triangle.Triangle--three
+    div.Triangle.Triangle--four
 </template>
 
 <style lang="scss">

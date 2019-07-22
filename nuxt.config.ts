@@ -1,6 +1,7 @@
+import NuxtConfiguration from '@nuxt/config'
 import colors from 'vuetify/es5/util/colors'
 
-export default {
+const config: NuxtConfiguration = {
   mode: 'universal',
   /*
   ** Headers of the page
@@ -78,3 +79,5 @@ export default {
     }
   }
 }
+
+export default config
