@@ -5,7 +5,7 @@
       template(v-for="(item, index) in itemsMenu")
         //if there is a Submenu, then generate a button with a drop-down menu
         v-menu(v-if="item.submenu.length" offset-y open-on-hover, :key="index")
-          v-btn(flat slot="activator" )
+          v-btn(flat slot="activator")
             span {{ item.text }}
             v-icon arrow_drop_down
           v-list(dense)
@@ -15,17 +15,19 @@
         v-btn(v-else flat :to="item.url", :key="index" :disabled="!item.active")
           span {{ item.text }}
 
-    v-toolbar-side-icon.hidden-md-and-up(@click.stop="isOpenNavigate = !isOpenNavigate")
+    v-toolbar-side-icon.hidden-md-and-up(@click="$emit('input', !value)")
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue, Prop } from 'vue-property-decorator'
 import dataMenu, { MenuItem } from '@/data/menu'
 
 @Component({})
 export default class MenuTop extends Vue {
+  @Prop({ required: true })
+  value!: boolean
+
   public itemsMenu: MenuItem[] = dataMenu
-  public isOpenNavigate = false
 }
 </script>
 

@@ -1,6 +1,7 @@
 <template lang="pug">
   v-app
-    MenuTop
+    MenuLeft(v-model="collapsed")
+    MenuTop(v-model="collapsed")
     v-content
       v-container
         nuxt
@@ -11,8 +12,11 @@ import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
   components: {
+    MenuLeft: () => import('@/components/Menu/Left.vue'),
     MenuTop: () => import('@/components/Menu/Top.vue')
   }
 })
-export default class mainLayout extends Vue {}
+export default class mainLayout extends Vue {
+  public collapsed = false
+}
 </script>
