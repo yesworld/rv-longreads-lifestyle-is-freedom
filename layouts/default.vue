@@ -2,9 +2,7 @@
   v-app
     MenuLeft(v-model="collapsed")
     MenuTop(v-model="collapsed")
-    v-content
-      v-container
-        nuxt
+    nuxt
 </template>
 
 <script lang="ts">
