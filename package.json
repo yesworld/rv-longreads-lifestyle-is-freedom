@@ -1,7 +1,7 @@
 {
-  "name": "RT-longreads-live-free",
+  "name": "rv-longreads-lifestyle-is-freedom",
   "version": "1.0.0",
-  "description": "My stylish Nuxt.js project",
+  "description": "Проект образ жизни - свобода для интернет-газеты http://realnoevremya.ru",
   "author": "yesworld",
   "private": true,
   "scripts": {
@@ -30,5 +30,11 @@
     "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
-  }
+  },
+  "keywords": [
+    "typescript",
+    "nuxt",
+    "vuetify",
+    "vue"
+  ]
 }

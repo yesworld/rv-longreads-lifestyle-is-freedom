@@ -1,6 +1,6 @@
-# RT-longreads-live-free
+# Образ жизни - свобода   
 
-> My stylish Nuxt.js project
+Лонгрид для сайта Реальное время. https://realnoevremya.ru
 
 ## Build Setup
 
