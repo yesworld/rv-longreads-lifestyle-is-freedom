@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-app
+  v-app.grey--text.text--darken-3
     MenuLeft(v-model="collapsed")
     MenuTop(v-model="collapsed")
     nuxt
@@ -18,3 +18,11 @@ export default class mainLayout extends Vue {
   public collapsed = false
 }
 </script>
+<style lang="scss">
+.theme--light.application {
+  background: #fff !important;
+}
+.text-underline {
+  text-decoration: underline;
+}
+</style>
