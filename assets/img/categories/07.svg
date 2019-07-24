@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="58.6053mm" height="44.0549mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 6275 4717"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:black;stroke-width:80.2982;stroke-linecap:round;stroke-linejoin:round}
+    .str1 {stroke:black;stroke-width:80.2982;stroke-linecap:round;stroke-linejoin:round}
+    .fil0 {fill:none;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1386581652352">
+   <path class="fil0 str0" d="M6234 404l-1770 1117m-2735 1726l-1689 1066"/>
+   <path class="fil0 str0" d="M5696 40l-1589 1003m-1215 767l-105 66m-1058 667l-1689 1067"/>
+   <path class="fil0 str0" d="M6234 1811l-1700 1073m-2130 1344l-711 449"/>
+   <path class="fil0 str0" d="M6234 1107l-1706 1077m-1492 942l-139 88m-1168 736l-1150 727"/>
+   <path class="fil0 str0" d="M4581 40l-1197 756m-1655 1044l-1689 1066"/>
+  </g>
+  <g id="_1386581657504">
+   <path class="fil0 str1" d="M3343 1009c569,0 988,390 988,962 0,573 -419,941 -988,941l-771 0 0 385 -629 0 0 -2288 1400 0zm-771 1317l745 0c222,0 381,-118 381,-355 0,-231 -159,-376 -381,-376l-745 0 0 731z"/>
+   <path class="fil0 str1" d="M3694 2995c3,18 4,37 4,57 0,231 -159,376 -381,376l-745 0 0 0 -628 0 0 586 1399 0c569,0 988,-389 988,-962 0,-156 -31,-297 -88,-419 -107,148 -310,305 -547,361l-2 1z"/>
+  </g>
+  <g id="_1386581657184">
+   <circle class="fil0 str0" cx="731" cy="330" r="264"/>
+   <circle class="fil0 str0" cx="2019" cy="582" r="175"/>
+   <polygon class="fil0 str0" points="762,1339 497,1605 762,1870 "/>
+   <circle class="fil0 str0" cx="4522" cy="4073" r="175"/>
+   <polygon class="fil0 str0" points="5542,3033 5807,3298 5542,3563 "/>
+  </g>
+ </g>
+</svg>

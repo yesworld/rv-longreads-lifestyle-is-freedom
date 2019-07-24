@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="58.6054mm" height="44.0549mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 6275 4717"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:black;stroke-width:80.2981;stroke-linecap:round;stroke-linejoin:round}
+    .str1 {stroke:black;stroke-width:80.2981;stroke-linecap:round;stroke-linejoin:round}
+    .fil0 {fill:none;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1386581648928">
+   <g>
+    <path class="fil0 str0" d="M6234 404l-1394 880m-699 441l-790 498m-428 270l-393 249m-1064 671l-1426 900"/>
+    <path class="fil0 str0" d="M5696 40l-1177 743m-711 449l-457 288m-428 270l-666 421m-381 240l-337 213m-591 373l-908 573"/>
+    <path class="fil0 str0" d="M6234 1811l-1086 686m-1164 734l-425 268m-1778 1122l-88 56"/>
+    <path class="fil0 str0" d="M6234 1107l-1240 783m-380 240l-160 101m-525 331l-578 365m-428 270l-2344 1480"/>
+    <path class="fil0 str0" d="M4581 40l-684 432m-362 228l-163 103m-679 429l-590 372m-893 564l-1170 738"/>
+   </g>
+   <g>
+    <line class="fil0 str1" x1="1523" y1="1018" x2="4752" y2= "1018" />
+    <line class="fil0 str1" x1="3137" y1="309" x2="3137" y2= "3713" />
+    <g>
+     <path class="fil0 str1" d="M2286 747l224 0c14,-204 151,-268 227,-268l374 0"/>
+     <path class="fil0 str1" d="M3989 747l-225 0c-14,-204 -151,-268 -226,-268l-374 0"/>
+    </g>
+    <line class="fil0 str1" x1="2583" y1="4058" x2="3692" y2= "4058" />
+    <line class="fil0 str1" x1="1619" y1="4407" x2="4655" y2= "4407" />
+    <g>
+     <path class="fil0 str1" d="M1858 4370c28,-185 204,-313 290,-313l162 0c14,-204 199,-344 316,-344l511 0"/>
+     <path class="fil0 str1" d="M4417 4370c-28,-185 -205,-313 -290,-313l-162 0c-14,-204 -199,-344 -316,-344l-512 0"/>
+    </g>
+    <g>
+     <g>
+      <g>
+       <line class="fil0 str1" x1="1728" y1="995" x2="1300" y2= "2685" />
+       <line class="fil0 str1" x1="1728" y1="995" x2="2156" y2= "2685" />
+      </g>
+      <line class="fil0 str1" x1="1091" y1="2878" x2="2365" y2= "2878" />
+      <path class="fil0 str1" d="M2280 2881c-93,212 -305,361 -552,361 -247,0 -459,-149 -552,-361"/>
+     </g>
+     <g>
+      <g>
+       <line class="fil0 str1" x1="4547" y1="995" x2="4118" y2= "2685" />
+       <line class="fil0 str1" x1="4547" y1="995" x2="4975" y2= "2685" />
+      </g>
+      <line class="fil0 str1" x1="3910" y1="2878" x2="5183" y2= "2878" />
+      <path class="fil0 str1" d="M5098 2881c-92,212 -304,361 -551,361 -247,0 -460,-149 -552,-361"/>
+     </g>
+    </g>
+   </g>
+   <circle class="fil0 str0" cx="5216" cy="3878" r="175"/>
+   <polygon class="fil0 str0" points="5969,2874 6234,3139 5969,3404 "/>
+   <circle class="fil0 str0" cx="349" cy="1853" r="264"/>
+   <circle class="fil0 str0" cx="1750" cy="271" r="175"/>
+   <polygon class="fil0 str0" points="729,463 464,728 729,993 "/>
+  </g>
+ </g>
+</svg>
