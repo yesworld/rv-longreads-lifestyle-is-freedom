@@ -25,9 +25,9 @@ v-content
   v-container.box-about(grid-list-xl)
     h2.display-2.text-xs-center О проекте
     v-layout(row wrap align-center)
-      v-flex(xs6)
+      v-flex(xs12 sm6)
         img.v-content__wrap(:src="aboutO")
-      v-flex.pa-4(xs6)
+      v-flex.pa-4(xs12 sm6)
         p
           b Фотоконкурс «Образ жизни — свобода»
           |  проводится в 2019 впервые, предполагает большой общественный резонанс и должен стал ежегодным, а выставки работ его финалистов и победителей будут широко экспонироваться по всей республике.
@@ -63,7 +63,12 @@ v-content
                 h4.text-uppercase {{category.title}}
                 h5(v-if="category.prise") {{category.prise}}
 
-
+  // 4 section: expert
+  v-container.box-expert(grid-list-xl)
+    h2.display-2.text-xs-center Экспертная комиссия
+    v-layout(row wrap align-center)
+      v-flex
+        Slides
 
 
   // TEST
@@ -98,10 +103,19 @@ v-content
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import Slides from '~/components/Slides.vue'
+// const Slides = process.browser ? require('~/components/Slides.vue') : null
+// let Slides = null
+// if (process.browser) {
+//   /* eslint-disable global-require */
+//   Slides = require('~/components/Slides.vue')
+//   /* eslint-enable global-require */
+// }
 
 @Component({
   components: {
-    logo: () => import('~/components/Logo.vue')
+    logo: () => import('~/components/Logo.vue'),
+    Slides
   }
 })
 export default class Index extends Vue {

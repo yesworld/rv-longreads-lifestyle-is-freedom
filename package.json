@@ -14,9 +14,11 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "3.0.0-beta.16",
     "@nuxtjs/vuetify": "0.5.5",
+    "jquery": "^3.4.1",
     "nuxt": "^2.0.0",
     "ts-node": "^8.3.0",
-    "vue-property-decorator": "^8.2.1"
+    "vue-property-decorator": "^8.2.1",
+    "vue-slick": "^1.1.15"
   },
   "devDependencies": {
     "@nuxt/typescript": "^2.8.1",

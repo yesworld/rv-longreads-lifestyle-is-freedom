@@ -1,5 +1,6 @@
 import NuxtConfiguration from '@nuxt/config'
 import colors from 'vuetify/es5/util/colors'
+import nodeExternals from 'webpack-node-externals'
 
 const config: NuxtConfiguration = {
   mode: 'universal',
@@ -32,11 +33,14 @@ const config: NuxtConfiguration = {
   ** Global CSS
   */
   css: [
+      'slick-carousel/slick/slick.scss',
+      'slick-carousel/slick/slick-theme.scss'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: "~plugins/slick-slide.ts", ssr: false }
   ],
   /*
   ** Nuxt.js modules
