@@ -4,6 +4,7 @@
     MenuTop(v-model="collapsed")
     nuxt
     TheFooter
+    BackToTop
 </template>
 
 <script lang="ts">
@@ -13,6 +14,7 @@ import { Component, Vue } from 'vue-property-decorator'
   components: {
     MenuLeft: () => import('@/components/Menu/Left.vue'),
     MenuTop: () => import('@/components/Menu/Top.vue'),
+    BackToTop: () => import('@/components/Menu/BackToTop.vue'),
     TheFooter: () => import('@/components/TheFooter.vue')
   }
 })
