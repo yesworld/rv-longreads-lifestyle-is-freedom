@@ -22,7 +22,7 @@ import dataMenu, { MenuItem } from '@/data/menu'
 
 @Component({})
 export default class MenuLeft extends Vue {
-  @Prop()
+  @Prop({ required: true })
   public value!: boolean
 
   public itemsMenu: MenuItem[] = dataMenu
