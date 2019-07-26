@@ -1,6 +1,5 @@
 import NuxtConfiguration from '@nuxt/config'
 import colors from 'vuetify/es5/util/colors'
-import nodeExternals from 'webpack-node-externals'
 
 const config: NuxtConfiguration = {
   mode: 'universal',
@@ -63,8 +62,8 @@ const config: NuxtConfiguration = {
   vuetify: {
     theme: {
       primary: colors.blue.lighten2,
+      secondary: colors.blueGrey.darken4,
       accent: colors.grey.darken3,
-      secondary: colors.amber.darken3,
       info: colors.teal.lighten1,
       warning: colors.amber.base,
       error: colors.deepOrange.accent4,

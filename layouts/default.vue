@@ -3,6 +3,7 @@
     MenuLeft(v-model="collapsed")
     MenuTop(v-model="collapsed")
     nuxt
+    TheFooter
 </template>
 
 <script lang="ts">
@@ -11,7 +12,8 @@ import { Component, Vue } from 'vue-property-decorator'
 @Component({
   components: {
     MenuLeft: () => import('@/components/Menu/Left.vue'),
-    MenuTop: () => import('@/components/Menu/Top.vue')
+    MenuTop: () => import('@/components/Menu/Top.vue'),
+    TheFooter: () => import('@/components/TheFooter.vue')
   }
 })
 export default class mainLayout extends Vue {

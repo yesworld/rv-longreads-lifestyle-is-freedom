@@ -2,13 +2,14 @@
   v-layout(row justify-center align-center)
     v-flex(:style="`background-image: url(${bg2})`")
       v-container(grid-list-xl)
-        h2.display-2.text-xs-center Номинации
+        h2 Номинации
         v-layout(wrap row justify-center align-center)
           v-flex.text-xs-center(xs2 sm4, v-for="(category, i) in categories", :key="i")
             img.logo(:src="category.logo" width=150)
             h4.text-uppercase {{category.title}}
             h5(v-if="category.prise") {{category.prise}}
 </template>
+
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 
@@ -50,6 +51,7 @@ export default class Nominees extends Vue {
   ]
 }
 </script>
+
 <style lang="scss">
 .box-nominees {
   h5 {

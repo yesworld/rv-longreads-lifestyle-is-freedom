@@ -14,7 +14,7 @@ v-content
                 h1.display-3.text-xs-right.mb-4 Образ жизни
                   br
                   span — свобода
-                h4.subheading.text-xs-right.mb-5 Масштабная акция,  совместно организованная арт-галереей городского коттеджного посёлка «Примавера», интернет-газетой  «Реальное время» и СОЮЗОМ ФОТОГРАФОВ РЕСПУБЛИКИ ТАТАРСТАН
+                h4.subheading.text-xs-right.mb-5 Масштабная акция, совместно организованная арт-галереей городского коттеджного посёлка «Примавера», интернет-газетой  «Реальное время» и СОЮЗОМ ФОТОГРАФОВ РЕСПУБЛИКИ ТАТАРСТАН
                 div.text-xs-right
                   v-btn.primary--text(round) Хочу участвовать
               v-flex.box-slides(xs6)
@@ -43,13 +43,6 @@ v-content
   v-container.box-partners(grid-list-xl)
     h2 Партнеры
     Partners
-
-
-  // TEST
-  v-container(grid-list-xl)
-    h2 Lorem ipsum
-    About
-
 </template>
 
 <script lang="ts">

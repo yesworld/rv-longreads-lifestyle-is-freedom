@@ -1,8 +1,8 @@
 {
   "name": "rv-longreads-lifestyle-is-freedom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Проект образ жизни - свобода для интернет-газеты http://realnoevremya.ru",
-  "author": "yesworld",
+  "author": "yesworld <a.yesworld@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -37,6 +37,7 @@
     "typescript",
     "nuxt",
     "vuetify",
-    "vue"
+    "vue",
+    "scss"
   ]
 }

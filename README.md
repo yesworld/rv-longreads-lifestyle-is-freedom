@@ -1,4 +1,6 @@
-# Образ жизни - свобода   
+# Lifestyle is freedom / Образ жизни - свобода   
+
+The longread for the site is [Realnoe Vremya](https://realnoevremya.ru).
 
 Лонгрид для сайта Реальное время. https://realnoevremya.ru
 
@@ -18,5 +20,3 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
