@@ -17,7 +17,7 @@
       div.text-xs-center(v-for="(slide, i) in slides", :key="i")
         div.wrap-img
           img(:src="slide.img")
-        h3.display-1.py-2 {{slide.name}}
+        h3.py-2 {{slide.name}}
         hr
         h5 {{slide.position}}
       //div
@@ -157,88 +157,136 @@ export default {
 </script>
 
 <style lang="scss">
-.slick-slide {
-  & > div {
-    padding: 0 30px;
-  }
-
-  .wrap-img {
-    position: relative;
-    padding-top: 20px;
-    /*#01B7FF*/
-
-    &:before,
-    &:after {
-      position: absolute;
-      content: '';
-      display: block;
-      width: 30%;
-      height: 23%;
-      background: repeating-linear-gradient(
-        -45deg,
-        #ccc,
-        #ccc 3px,
-        #fff 0px,
-        #fff 10px
-      );
+.slick-slider {
+  .slick-slide {
+    & > div {
+      padding: 0 30px;
     }
 
-    &:before {
-      left: -15px;
-      top: 10px;
-      z-index: 0;
-    }
-
-    &:after {
-      bottom: 0;
-      right: 0;
-      z-index: 3;
-      background: repeating-linear-gradient(
-        -45deg,
-        #fff,
-        #fff 3px,
-        rgba(255, 255, 255, 0) 0px,
-        rgba(255, 255, 255, 0) 10px
-      );
-    }
-
-    img {
-      max-width: 100%;
+    .wrap-img {
       position: relative;
-      z-index: 1;
+      padding-top: 20px;
+      /*#01B7FF*/
+
+      &:before,
+      &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 30%;
+        height: 23%;
+        background: repeating-linear-gradient(
+          -45deg,
+          #ccc,
+          #ccc 3px,
+          #fff 0px,
+          #fff 10px
+        );
+      }
+
+      &:before {
+        left: -15px;
+        top: 10px;
+        z-index: 0;
+      }
+
+      &:after {
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        background: repeating-linear-gradient(
+          -45deg,
+          #fff,
+          #fff 3px,
+          rgba(255, 255, 255, 0) 0px,
+          rgba(255, 255, 255, 0) 10px
+        );
+      }
+
+      img {
+        max-width: 100%;
+        position: relative;
+        z-index: 1;
+      }
     }
-  }
 
-  h3 {
-    font-size: 24px;
-    font-weight: 400;
-  }
-
-  hr {
-    width: 30%;
-    border: 2px solid #ccc;
-    border-radius: 3px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-
-  &.slick-current {
-    .wrap-img:before {
-      background: repeating-linear-gradient(
-        -45deg,
-        #7adcff,
-        #7adcff 3px,
-        #fff 0px,
-        #fff 10px
-      );
-    }
-    img {
-      outline: 1px solid white;
-      outline-offset: -9px;
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
     }
 
     hr {
-      border: 2px solid #7adcff;
+      width: 30%;
+      border: 2px solid #ccc;
+      border-radius: 3px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+    &.slick-current {
+      .wrap-img:before {
+        background: repeating-linear-gradient(
+          -45deg,
+          #7adcff,
+          #7adcff 3px,
+          #fff 0px,
+          #fff 10px
+        );
+      }
+      img {
+        outline: 1px solid white;
+        outline-offset: -9px;
+      }
+
+      hr {
+        border: 2px solid #7adcff;
+      }
+    }
+  }
+
+  .slick-arrow {
+    display: block;
+    width: 100px;
+    height: 141px;
+    right: -110px;
+
+    &:before,
+    &:after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #ccc;
+      display: block;
+      position: absolute;
+      left: -15px;
+      opacity: 1;
+    }
+
+    &:before {
+      top: 62px;
+      transform: rotate(45deg);
+    }
+    &:after {
+      bottom: 36px;
+      transform: rotate(-45deg);
+    }
+
+    &.slick-prev {
+      left: -110px;
+      right: unset;
+
+      &:before,
+      &:after {
+        left: unset;
+        right: -15px;
+      }
+
+      &:before {
+        transform: rotate(135deg);
+      }
+      &:after {
+        transform: rotate(-135deg);
+      }
     }
   }
 }
