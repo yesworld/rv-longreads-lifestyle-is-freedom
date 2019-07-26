@@ -19,6 +19,15 @@ export default class mainLayout extends Vue {
 }
 </script>
 <style lang="scss">
+h2 {
+  padding-bottom: 25px;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: normal;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
 .theme--light.application {
   background: #fff !important;
 }
