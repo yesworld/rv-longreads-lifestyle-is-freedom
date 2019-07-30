@@ -23,6 +23,12 @@ const config: NuxtConfiguration = {
       }
     ]
   },
+  // Set the router's base path
+  router: {
+    base: process.env.NODE_ENV === 'production'
+      ? '/longreads/lifestyle/'
+      : '/'
+  },
   /*
   ** Customize the progress-bar color
   */
