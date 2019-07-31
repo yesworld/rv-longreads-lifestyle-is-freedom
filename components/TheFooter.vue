@@ -2,33 +2,22 @@
   v-layout.footer.pt-3
     v-flex
       v-container(grid-list-xl)
-        v-layout.py-4(wrap row)
+        v-layout(wrap row)
 
-          v-flex.box-logo(xs12 sm3)
+          v-flex.box-logo.py-7(xs12 sm3)
             img.logo.mr-3(:src="logo" width=80)
             p.my-0 Фотоконкурс
             p.my-0 «Образ жизни - свобода»
             p.my-0 © 2019г
 
           v-flex(xs12 sm6)
-            v-list.transparent.pt-0
-              v-list-tile
-                v-list-tile-avatar(color='secondary')
-                  v-icon.elevation-4(dark)
-                    | phone
-                v-list-tile-title +7 (843) 222 90 80
-
-              v-list-tile
-                v-list-tile-avatar(color='secondary')
-                  v-icon.elevation-4(dark)
-                    | location_on
-                v-list-tile-title 420097, г. Казань, ул. Академическая, 2
-
-              v-list-tile
-                v-list-tile-avatar(color='secondary')
-                  v-icon.elevation-4(dark)
-                    | email
-                v-list-tile-title reklama@realnoevremya.ru
+            v-list.transparent(two-line)
+              v-list-item(v-for="item in contacts" :key="item.title")
+                v-list-item-avatar(color='secondary')
+                  v-icon.elevation-4(dark v-text="item.icon")
+                v-list-item-content
+                  v-list-item-title {{item.title}}
+                  v-list-item-subtitle {{item.subtitle}}
 
           v-flex(xs12 sm3)
             h5 Мы в социальных сетях:
@@ -70,10 +59,12 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import ContactsInfo from '@/data/contacts'
 
 @Component
 export default class TheFooter extends Vue {
   public logo: string = require('@/assets/img/logo.svg')
+  public contacts = ContactsInfo
 }
 </script>
 

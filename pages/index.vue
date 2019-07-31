@@ -3,14 +3,14 @@ v-content
   // 1 section
   section
     TheJumbotron
-      div.text-xs-right
-        v-btn(round disabled) Фотоконкурс
-      h1.display-3.text-xs-right.mb-4 Образ жизни
+      div.text-right
+        v-btn(rounded disabled) Фотоконкурс
+      h1.display-3.text-right.mb-4 Образ жизни
         br
         span — свобода
-      h4.subheading.text-xs-right.mb-5 Масштабная акция, совместно организованная арт-галереей городского коттеджного посёлка «Примавера», интернет-газетой  «Реальное время» и СОЮЗОМ ФОТОГРАФОВ РЕСПУБЛИКИ ТАТАРСТАН
-      div.text-xs-right
-        v-btn.primary--text(round) Хочу участвовать
+      h4.subheading.text-right.mb-5 Масштабная акция, совместно организованная арт-галереей городского коттеджного посёлка «Примавера», интернет-газетой  «Реальное время» и СОЮЗОМ ФОТОГРАФОВ РЕСПУБЛИКИ ТАТАРСТАН
+      div.text-right
+        v-btn.primary--text(rounded) Хочу участвовать
 
   // 2 section: About project
   v-container.box-about(grid-list-xl)

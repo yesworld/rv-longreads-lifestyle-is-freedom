@@ -16,7 +16,16 @@ $ yarn dev
 # build for production and launch server
 $ yarn build
 $ yarn start
+```
+## pm2
 
-# generate static project
-$ yarn generate
+```bash
+# start
+pm2 start npm -n "Livestyle" -- run start
+
+# restart
+$ pm2 restart Livestyle
+
+# to see log
+$ pm2 logs Livestyle
 ```

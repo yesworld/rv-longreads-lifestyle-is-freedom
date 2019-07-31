@@ -20,7 +20,7 @@
         |  О дате проведения Финала будет сообщено дополнительно.
 
       hr.mb-3
-      v-btn.download(flat color="primary")
+      v-btn.download(text color="primary")
         img(:src="iconPdfFile" width=50)
       p.mb-0.pt-2.text-underline Положение фотоконкурса
       p.text-underline «Образ жизни — свобода» (350 kb)

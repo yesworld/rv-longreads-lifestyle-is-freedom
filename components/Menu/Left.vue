@@ -3,17 +3,20 @@
     v-list(dense)
       template(v-for="(item, index) in itemsMenu")
         //if there is a Submenu, then generate a button with a drop-down menu
-        v-list-group(v-if="item.submenu.length" no-action)
-          v-list-tile(:key="index", slot="activator", ripple)
-            v-list-tile-content
-              v-list-tile-title {{ item.text }}
-          v-list-tile(v-for="(subItem, index2) in item.submenu", :key="index + index2", :to="item.url + '/' + subItem", ripple)
-            v-list-tile-content
-              v-list-tile-title {{ subItem }}
+        v-list-group(v-if="item.submenu.length" no-action, :key="index")
+          template(v-slot:activator)
+            v-list-item-content
+              v-list-item-title(ripple) {{ item.text }}
+          v-list-item(
+            v-for="(subItem, index2) in item.submenu",
+            :key="index + index2", :to="item.url + '/' + subItem"
+            ripple
+            )
+            v-list-item-title {{ subItem }}
+
         //if there is no Submenu, then generate a simple button
-        v-list-tile(v-else, :key="index", :to="item.url" flat ripple :disabled="!item.active")
-          v-list-tile-content
-            v-list-tile-title {{ item.text }}
+        v-list-item(v-else, :key="index", :to="item.url" flat ripple :disabled="!item.active")
+          v-list-item-title {{ item.text }}
 </template>
 
 <script lang="ts">

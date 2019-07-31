@@ -1,8 +1,8 @@
 <template lang="pug">
-  v-app.grey--text.text--darken-3
+  v-app
     MenuLeft(v-model="collapsed")
     MenuTop(v-model="collapsed")
-    nuxt
+    nuxt.grey--text.text--darken-3
     TheFooter
     BackToTop
 </template>

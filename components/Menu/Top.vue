@@ -1,21 +1,29 @@
 <template lang="pug">
-  v-toolbar(dense fixed clipped-left app flat)
+  v-app-bar(dense fixed clipped-left app)
     v-spacer
     v-toolbar-items.hidden-sm-and-down
       template(v-for="(item, index) in itemsMenu")
         //if there is a Submenu, then generate a button with a drop-down menu
-        v-menu(v-if="item.submenu.length" offset-y open-on-hover, :key="index")
-          v-btn(flat slot="activator")
-            span {{ item.text }}
-            v-icon arrow_drop_down
+        v-menu(
+          v-if="item.submenu.length"
+          transition="slide-y-transition"
+          offset-y
+          open-on-hover
+          :key="index"
+          )
+          template(v-slot:activator="{ on }")
+            v-btn(text v-on="on")
+              | {{ item.text }}
+              v-icon arrow_drop_down
           v-list(dense)
-            v-list-tile.submenu-open(v-for="subItem, index2 in item.submenu", :key="index + index2", :to="item.url + '/' + subItem", ripple)
-              v-list-tile-title {{ subItem }}
+            v-list-item(v-for="subItem, index2 in item.submenu", :key="index + index2", :to="item.url + '/' + subItem", ripple)
+              v-list-item-title {{ subItem }}
+
         //if there is no Submenu, then generate a simple button
-        v-btn(v-else flat :to="item.url", :key="index" :disabled="!item.active")
+        v-btn(v-else text :to="item.url", :key="index" :disabled="!item.active")
           span {{ item.text }}
 
-    v-toolbar-side-icon.hidden-md-and-up(@click="$emit('input', !value)")
+    v-app-bar-nav-icon.hidden-md-and-up(@click="$emit('input', !value)")
 </template>
 
 <script lang="ts">
