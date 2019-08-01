@@ -14,14 +14,12 @@
     @swipe="handleSwipe"
     @lazyLoaded="handleLazyLoaded"
     @lazyLoadError="handleLazeLoadError")
-      div.text-xs-center(v-for="(slide, i) in slides", :key="i")
+      div.text-center(v-for="(slide, i) in slides", :key="i")
         div.wrap-img
           img(:src="slide.img")
         h3.py-2 {{slide.name}}
         hr
         h5 {{slide.position}}
-      //div
-      //  img(src="http://lorempixel.com/263/318/cats/3")
 
 </template>
 
@@ -79,7 +77,7 @@ export default {
         focusOnSelect: true,
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 960,
             settings: {
               arrows: false,
               centerMode: true,

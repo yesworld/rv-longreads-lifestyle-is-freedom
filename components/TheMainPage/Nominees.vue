@@ -4,7 +4,7 @@
       v-container(grid-list-xl)
         h2 Номинации
         v-layout(wrap row justify-center align-center)
-          v-flex.text-xs-center(xs2 sm4, v-for="(category, i) in categories", :key="i")
+          v-flex.text-center(xs2 sm4, v-for="(category, i) in categories", :key="i")
             img.logo(:src="category.logo" width=150)
             h4.text-uppercase {{category.title}}
             h5(v-if="category.prise") {{category.prise}}

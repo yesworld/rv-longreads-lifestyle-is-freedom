@@ -1,7 +1,7 @@
 <template lang="pug">
 v-content
   // 1 section
-  section
+  v-container.pa-0(fluid)
     TheJumbotron
       div.text-right
         v-btn(rounded disabled) Фотоконкурс
@@ -13,12 +13,12 @@ v-content
         v-btn.primary--text(rounded) Хочу участвовать
 
   // 2 section: About project
-  v-container.box-about(grid-list-xl)
+  v-container.box-about
     h2 О проекте
     About
 
   // 3 section: Nominees
-  section.box-nominees
+  v-container(fluid).box-nominees
     Nominees
 
   // 4 section: Experts

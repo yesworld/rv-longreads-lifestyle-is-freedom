@@ -1,10 +1,11 @@
 <template lang="pug">
   v-app
-    MenuLeft(v-model="collapsed")
-    MenuTop(v-model="collapsed")
-    nuxt.grey--text.text--darken-3
-    TheFooter
-    BackToTop
+    div.grey--text.text--darken-3
+      MenuLeft(v-model="collapsed")
+      MenuTop(v-model="collapsed")
+      nuxt
+      TheFooter
+      BackToTop
 </template>
 
 <script lang="ts">
@@ -31,8 +32,9 @@ h2 {
   letter-spacing: normal;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  position: relative;
 }
-.theme--light.application {
+.v-application--wrap {
   background: #fff !important;
 }
 .text-underline {

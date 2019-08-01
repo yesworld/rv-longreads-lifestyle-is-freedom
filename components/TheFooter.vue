@@ -4,13 +4,13 @@
       v-container(grid-list-xl)
         v-layout(wrap row)
 
-          v-flex.box-logo.py-7(xs12 sm3)
+          v-flex.box-logo.py-7(xs12 sm4)
             img.logo.mr-3(:src="logo" width=80)
             p.my-0 Фотоконкурс
             p.my-0 «Образ жизни - свобода»
             p.my-0 © 2019г
 
-          v-flex(xs12 sm6)
+          v-flex(xs12 sm4)
             v-list.transparent(two-line)
               v-list-item(v-for="item in contacts" :key="item.title")
                 v-list-item-avatar(color='secondary')
@@ -19,7 +19,7 @@
                   v-list-item-title {{item.title}}
                   v-list-item-subtitle {{item.subtitle}}
 
-          v-flex(xs12 sm3)
+          v-flex(xs12 sm4)
             h5 Мы в социальных сетях:
             // icon vk
             v-btn.mx-2(

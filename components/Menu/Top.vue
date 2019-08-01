@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-app-bar(dense fixed clipped-left app)
+  v-app-bar(clipped-left fixed app dense)
     v-spacer
     v-toolbar-items.hidden-sm-and-down
       template(v-for="(item, index) in itemsMenu")

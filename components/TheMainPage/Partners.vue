@@ -1,6 +1,6 @@
 <template lang="pug">
   v-layout(wrap row justify-center align-center)
-    v-flex.text-xs-center(xs2 sm3, v-for="(partner, i) in partners", :key="i")
+    v-flex.text-center(xs2 sm3, v-for="(partner, i) in partners", :key="i")
       img.logo(:src="partner" width=150)
 </template>
 
