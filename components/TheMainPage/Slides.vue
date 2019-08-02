@@ -86,6 +86,15 @@ export default {
             }
           },
           {
+            breakpoint: 800,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 2
+            }
+          },
+          {
             breakpoint: 480,
             settings: {
               arrows: false,

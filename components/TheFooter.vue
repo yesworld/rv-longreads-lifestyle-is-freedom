@@ -4,13 +4,14 @@
       v-container(grid-list-xl)
         v-layout(wrap row)
 
-          v-flex.box-logo.py-7(xs12 sm4)
-            img.logo.mr-3(:src="logo" width=80)
+          v-flex.hidden-sm-and-down.box-logo.py-7(xs12 sm3 md4)
+            div
+              img.logo.mr-3(:src="logo" width=80)
             p.my-0 Фотоконкурс
             p.my-0 «Образ жизни - свобода»
             p.my-0 © 2019г
 
-          v-flex(xs12 sm4)
+          v-flex(xs12 sm6 md4)
             v-list.transparent(two-line)
               v-list-item(v-for="item in contacts" :key="item.title")
                 v-list-item-avatar(color='secondary')
@@ -19,8 +20,8 @@
                   v-list-item-title {{item.title}}
                   v-list-item-subtitle {{item.subtitle}}
 
-          v-flex(xs12 sm4)
-            h5 Мы в социальных сетях:
+          v-flex.py-7(xs12 sm6 md4)
+            h4.mb-5 Мы в социальных сетях:
             // icon vk
             v-btn.mx-2(
               fab dark small color="secondary" target="_blank" rel="nofollow noindex noopener"
@@ -55,6 +56,14 @@
               )
               svg(xmlns='http://www.w3.org/2000/svg', width='18.44', height='13.06', viewBox='0 0 18.44 13.06')
                 path.cls-1(d='M29,16.37c-.46-2.9-2-2.7-4.91-2.81-2.69-.09-5.24-.14-7.94,0s-4.64-.11-5.15,2.55A34,34,0,0,0,11,24c.51,2.55,2.52,2.41,5.15,2.5s5.31.08,7.94,0c2.89-.12,4.48.11,4.91-2.81A31.65,31.65,0,0,0,29,16.37ZM18,22.55V17.41L23,20Z', transform='translate(-10.78 -13.47)')
+
+            v-layout.hidden-md-and-up.pt-5
+              v-flex.box-logo
+                div
+                  img.logo.mr-3(:src="logo" width=80)
+                p.my-0 Фотоконкурс
+                p.my-0 «Образ жизни - свобода»
+                p.my-0 © 2019г
 </template>
 
 <script lang="ts">
@@ -79,17 +88,23 @@ export default class TheFooter extends Vue {
   }
 
   .box-logo {
-    position: relative;
-    img {
-      float: left;
-    }
+    > div {
+      position: relative;
 
-    &:after {
-      content: '16+';
-      position: absolute;
-      left: 0;
-      top: 55px;
+      img {
+        float: left;
+      }
+
+      &:after {
+        content: '16+';
+        position: absolute;
+        left: 0;
+        top: 40px;
+      }
     }
+    /*@media (max-width: 600px) {*/
+    /*  color: red;*/
+    /*}*/
   }
 }
 </style>

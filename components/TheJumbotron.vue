@@ -1,14 +1,14 @@
 <template lang="pug">
-v-layout(row)
+v-layout
   v-flex
     v-parallax(dark :src="bg1" height="650")
       v-container(grid-list-xl)
         v-layout(row justify-center)
-          v-flex.box-title(xs8 md6)
+          v-flex.box-title(xs12 sm8 md6)
             img.logo(:src="logo" width=200)
             slot
 
-          v-flex.hidden-xs-only.box-slides(xs4 md6)
+          v-flex.hidden-xs-only.box-slides(sm4 md6)
             img.slide(:src="slide1")
             img.frame(:src="frame")
 </template>
@@ -27,7 +27,7 @@ export default class TheJumbotron extends Vue {
 
 <style lang="scss">
 .v-parallax__content {
-  color: inherit;
+  color: inherit !important;
 }
 .box-title {
   .logo {

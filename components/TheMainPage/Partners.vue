@@ -1,7 +1,8 @@
 <template lang="pug">
   v-layout(wrap row justify-center align-center)
-    v-flex.text-center(xs2 sm3, v-for="(partner, i) in partners", :key="i")
-      img.logo(:src="partner" width=150)
+    v-flex.text-center(xs6 sm3, v-for="(partner, i) in partners", :key="i")
+      a(:href='partner.link' :rel="partner.nofollow ? 'nofollow noindex noopener' : false")
+        img.v-content__wrap.logo(:src="partner.img" width=200)
 </template>
 
 <script lang="ts">
@@ -10,9 +11,21 @@ import { Component, Vue } from 'vue-property-decorator'
 @Component
 export default class Partners extends Vue {
   public partners = [
-    require('@/assets/img/partners/logo1-min.jpg'),
-    require('@/assets/img/partners/logo2-min.jpg'),
-    require('@/assets/img/partners/logo3-min.jpg')
+    {
+      img: require('@/assets/img/partners/logo1-min.jpg'),
+      link: '#',
+      nofollow: true
+    },
+    {
+      img: require('@/assets/img/partners/logo2-min.jpg'),
+      link: 'https://realnoevremya.ru',
+      nofollow: false
+    },
+    {
+      img: require('@/assets/img/partners/logo3-min.jpg'),
+      link: '#',
+      nofollow: true
+    }
   ]
 }
 </script>

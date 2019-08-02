@@ -1,6 +1,6 @@
 <template lang="pug">
 v-content
-  v-container.wrap-page-contact(fluid)
+  v-container.pa-0.wrap-page-contact(fluid)
     TheJumbotron
       h1.display-3.text-right.mb-4 Контакты
       v-list.transparent(two-line)
