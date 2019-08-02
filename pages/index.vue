@@ -1,39 +1,29 @@
 <template lang="pug">
 v-content
   // 1 section
-  v-container.pa-0(fluid)
-    TheJumbotron
-      div.text-right
-        v-btn(rounded disabled) Фотоконкурс
-      h1.display-3.text-right.mb-4 Образ жизни
-        br
-        span — свобода
-      h4.subheading.text-right.mb-5 Масштабная акция, совместно организованная арт-галереей городского коттеджного посёлка «Примавера», интернет-газетой  «Реальное время» и СОЮЗОМ ФОТОГРАФОВ РЕСПУБЛИКИ ТАТАРСТАН
-      div.text-right
-        v-btn.primary--text(rounded) Хочу участвовать
+  TheJumbotron
+    div.text-right
+      v-btn(rounded disabled) Фотоконкурс
+    h1.display-3.text-right.mb-4 Образ жизни
+      br
+      span — свобода
+    h4.subheading.text-right.mb-5 Масштабная акция, совместно организованная арт-галереей городского коттеджного посёлка «Примавера», интернет-газетой  «Реальное время» и СОЮЗОМ ФОТОГРАФОВ РЕСПУБЛИКИ ТАТАРСТАН
+    div.text-right
+      v-btn.primary--text(rounded) Хочу участвовать
 
   // 2 section: About project
-  v-container.box-about
-    h2 О проекте
-    About
+  About(:title="`О проекте`")
 
   // 3 section: Nominees
-  v-container(fluid).box-nominees
-    Nominees
+  Nominees
 
   // 4 section: Experts
-  v-container.box-expert(grid-list-xl)
-    h2 Экспертная комиссия
-    v-layout(row wrap align-center)
-      v-flex
-        Slides
+  Slides
 
   // 5 section: Galleries
 
   // 6 section: Partners
-  v-container.box-partners(grid-list-xl)
-    h2 Партнеры
-    Partners
+  Partners
 </template>
 
 <script lang="ts">

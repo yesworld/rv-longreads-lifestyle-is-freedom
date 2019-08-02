@@ -1,15 +1,14 @@
 <template lang="pug">
-v-content
-  v-container.pa-0.wrap-page-contact(fluid)
-    TheJumbotron
-      h1.display-3.text-right.mb-4 Контакты
-      v-list.transparent(two-line)
-        v-list-item(v-for="item in contacts" :key="item.title")
-          v-list-item-avatar(color='primary')
-            v-icon.elevation-4(dark v-text="item.icon")
-          v-list-item-content
-            v-list-item-title {{item.title}}
-            v-list-item-subtitle {{item.subtitle}}
+v-content.wrap-page-contact
+  TheJumbotron
+    h1.display-3.text-right.mb-4 Контакты
+    v-list.transparent(two-line)
+      v-list-item(v-for="item in contacts" :key="item.title")
+        v-list-item-avatar(color='primary')
+          v-icon.elevation-4(dark v-text="item.icon")
+        v-list-item-content
+          v-list-item-title {{item.title}}
+          v-list-item-subtitle {{item.subtitle}}
 
 </template>
 

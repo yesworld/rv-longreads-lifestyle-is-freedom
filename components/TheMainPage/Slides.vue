@@ -1,25 +1,29 @@
 <template lang="pug">
-  no-ssr
-    slick-slide(
-    ref="slick"
-    :options="slickOptions"
-    @afterChange="handleAfterChange"
-    @beforeChange="handleBeforeChange"
-    @breakpoint="handleBreakpoint"
-    @destroy="handleDestroy"
-    @edge="handleEdge"
-    @init="handleInit"
-    @reInit="handleReInit"
-    @setPosition="handleSetPosition"
-    @swipe="handleSwipe"
-    @lazyLoaded="handleLazyLoaded"
-    @lazyLoadError="handleLazeLoadError")
-      div.text-center(v-for="(slide, i) in slides", :key="i")
-        div.wrap-img
-          img(:src="slide.img")
-        h3.py-2 {{slide.name}}
-        hr
-        h5 {{slide.position}}
+v-container.box-expert(grid-list-xl)
+  h2 Экспертная комиссия
+  v-layout(row wrap align-center)
+    v-flex
+      no-ssr
+        slick-slide(
+        ref="slick"
+        :options="slickOptions"
+        @afterChange="handleAfterChange"
+        @beforeChange="handleBeforeChange"
+        @breakpoint="handleBreakpoint"
+        @destroy="handleDestroy"
+        @edge="handleEdge"
+        @init="handleInit"
+        @reInit="handleReInit"
+        @setPosition="handleSetPosition"
+        @swipe="handleSwipe"
+        @lazyLoaded="handleLazyLoaded"
+        @lazyLoadError="handleLazeLoadError")
+          div.text-center(v-for="(slide, i) in slides", :key="i")
+            div.wrap-img
+              img(:src="slide.img")
+            h3.py-2 {{slide.name}}
+            hr
+            h5 {{slide.position}}
 
 </template>
 

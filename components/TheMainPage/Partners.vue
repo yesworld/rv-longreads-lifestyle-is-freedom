@@ -1,4 +1,6 @@
 <template lang="pug">
+v-container.box-partners(grid-list-xl)
+  h2 Партнеры
   v-layout(wrap row justify-center align-center)
     v-flex.text-center(xs6 sm3, v-for="(partner, i) in partners", :key="i")
       a(:href='partner.link' :rel="partner.nofollow ? 'nofollow noindex noopener' : false")

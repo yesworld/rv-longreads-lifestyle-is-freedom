@@ -1,4 +1,6 @@
 <template lang="pug">
+v-container.box-about
+  h2(v-if="title") {{title}}
   v-layout(row wrap justify-center align-center)
     v-flex(xs12 sm6 md6)
       img.v-content__wrap(:src="aboutO")
@@ -27,10 +29,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue, Prop } from 'vue-property-decorator'
 
 @Component
 export default class About extends Vue {
+  @Prop()
+  public title!: string
   public aboutO: string = require('@/assets/img/about-O.jpg')
   public iconPdfFile: string = require('@/assets/img/ico-pdf-file.svg')
 }

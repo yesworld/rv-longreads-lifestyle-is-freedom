@@ -1,4 +1,5 @@
 <template lang="pug">
+v-container(fluid).box-nominees
   v-layout(row justify-center align-center)
     v-flex.bg(:style="`background-image: url(${bg2})`")
       v-container(grid-list-xl)
