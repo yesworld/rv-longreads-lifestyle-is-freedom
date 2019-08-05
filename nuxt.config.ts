@@ -16,11 +16,16 @@ const config: NuxtConfiguration = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // {
+      //   rel: 'stylesheet',
+      //   href:
+      //       'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
+      // },
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
-      }
+            'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto+Slab:400,700|Material+Icons&display=swap&subset=cyrillic'
+      },
     ]
   },
   // Set the router's base path

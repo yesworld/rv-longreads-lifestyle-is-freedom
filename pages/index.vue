@@ -3,13 +3,13 @@ v-content
   // 1 section
   TheJumbotron
     div.text-right
-      v-btn(rounded disabled) Фотоконкурс
-    h1.display-3.text-right.mb-4 Образ жизни
+      v-btn(rounded dark) Фотоконкурс
+    h1.text-right.mb-4 Образ жизни
       br
       span — свобода
     h4.subheading.text-right.mb-5 Масштабная акция, совместно организованная арт-галереей городского коттеджного посёлка «Примавера», интернет-газетой  «Реальное время» и СОЮЗОМ ФОТОГРАФОВ РЕСПУБЛИКИ ТАТАРСТАН
     div.text-right
-      v-btn.primary--text(rounded) Хочу участвовать
+      v-btn.primary--text.elevation-6(rounded) Хочу участвовать
 
   // 2 section: About project
   About(:title="`О проекте`")

@@ -21,7 +21,7 @@
                   v-list-item-subtitle {{item.subtitle}}
 
           v-flex.py-7(xs12 sm6 md4)
-            h4.mb-5 Мы в социальных сетях:
+            h5.mb-5 Мы в социальных сетях:
             // icon vk
             v-btn.mx-2(
               fab dark small color="secondary" target="_blank" rel="nofollow noindex noopener"
@@ -81,6 +81,10 @@ export default class TheFooter extends Vue {
 .footer {
   .container {
     border-top: 3px solid #7adcff;
+  }
+
+  h5 {
+    font-size: 16px;
   }
 
   svg {

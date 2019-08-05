@@ -31,7 +31,11 @@ export default class TheJumbotron extends Vue {
 
   .v-parallax__content {
     color: inherit !important;
-    margin-top: -70px !important;
+    margin-top: -70px;
+
+    @media (max-width: 550px) {
+      margin-top: 0;
+    }
   }
 }
 
