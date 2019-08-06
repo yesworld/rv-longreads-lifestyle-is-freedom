@@ -5,11 +5,11 @@
         v-parallax(dark :src="bg1" height="650")
           v-container(grid-list-xl)
             v-layout(row justify-center)
-              v-flex.box-title(xs12 sm8 md6)
+              v-flex.box-title(xs12 sm8 md6 lg5)
                 img.logo(:src="logo" width=200)
                 slot
 
-              v-flex.hidden-xs-only.box-slides(sm4 md6)
+              v-flex.hidden-xs-only.box-slides(sm4 md6 lg5)
                 img.slide(:src="slide1")
                 img.frame(:src="frame")
 </template>

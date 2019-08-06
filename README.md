@@ -21,9 +21,10 @@ $ yarn start
 
 ```bash
 # start
-pm2 start npm -n "Livestyle" -- run start
+$ pm2 start npm -n "Livestyle" -- run start
 
 # restart
+$ yarn run build
 $ pm2 restart Livestyle
 
 # to see log

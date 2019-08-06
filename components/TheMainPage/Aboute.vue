@@ -2,9 +2,9 @@
 v-container.box-about
   h2(v-if="title") {{title}}
   v-layout(row wrap justify-center align-center)
-    v-flex(xs12 sm6 md6)
+    v-flex(xs12 sm6 md6 lg5)
       img.v-content__wrap(:src="aboutO")
-    v-flex.pa-4(xs12 sm6 md6)
+    v-flex.pa-4(xs12 sm6 md6 lg5)
       p
         b Фотоконкурс «Образ жизни — свобода»
         |  проводится в 2019 впервые, предполагает большой общественный резонанс и должен стал ежегодным, а выставки работ его финалистов и победителей будут широко экспонироваться по всей республике.
